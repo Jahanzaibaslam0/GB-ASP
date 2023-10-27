@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" />
+    <script src="vendor/select2/select2.min.js"></script>
+</head>
+<body>
+    <form id="form1" >
+
+        <div>
+
+
+            <asp:dropdownlist id="myDropDownlistID" width="300px">
+                <asp:listitem text="Select Color"></asp:listitem>
+                <asp:listitem text="Red"></asp:listitem>
+                <asp:listitem text="Green"></asp:listitem>
+                <asp:listitem text="Blue"></asp:listitem>
+                <asp:listitem text="Pink"></asp:listitem>
+                <asp:listitem text="Yellow"></asp:listitem>
+                <asp:listitem text="Lime"></asp:listitem>
+                <asp:listitem text="Black"></asp:listitem>
+                <asp:listitem text="Purple"></asp:listitem>
+                <asp:listitem text="Deep Pink"></asp:listitem>
+                <asp:listitem text="Orange"></asp:listitem>
+                <asp:listitem text="Light Pink"></asp:listitem>
+            </asp:dropdownlist>
+
+        </div>
+
+
+    </form>
+
+    <script>
+ $(document).ready(function () { $("#myDropDownlistID").select2(); });
+    </script>
+</body>
+</html>

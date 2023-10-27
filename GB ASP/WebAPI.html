@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <script>
+
+$(function() {
+
+var entries = [];
+var dmJSON = "http://Customer.asmx/GetCustomerID.json";
+$.getJSON( dmJSON, function(data) {
+   $.each(data.entries, function(i, f) {
+      var tblRow = "<tr>" + "<td>" + f.AccountNum + "</td>" + "<td>" + f.CustGroup + "</td>" + "<td>" + f.Branch + "</td>" + "</tr>"
+       $(tblRow).appendTo("#entrydata tbody");
+ });
+
+});
+
+});
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="profile">
+            <table id="entrydata" border="1">
+                <thead>
+                <th>CustomerAccount</th>
+                <th>Group</th>
+                <th>Branch</th>
+                
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+Any help as to why it won't load the json data is appreciated.
+
+javascript 

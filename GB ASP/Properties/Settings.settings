@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GB_ASP.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Division" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FEED TECH DIVISION</Value>
+    </Setting>
+    <Setting Name="SindhBranch" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">KHO,HDC</Value>
+    </Setting>
+    <Setting Name="KHOBranch" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">KHO</Value>
+    </Setting>
+    <Setting Name="UserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Admin</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

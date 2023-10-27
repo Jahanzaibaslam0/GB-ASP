@@ -1,0 +1,1025 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{60C96CC2-3B99-4264-A6B8-6FE687BD2B77}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GB_ASP</RootNamespace>
+    <AssemblyName>GB ASP</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\Downloads\itextsharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AllCustomer.aspx" />
+    <Content Include="AllCustomerOnHold.aspx" />
+    <Content Include="AllReturnOrder.aspx" />
+    <Content Include="ALLSALESORDER.aspx" />
+    <Content Include="Calendar.aspx" />
+    <Content Include="CancelledReturnOrder.aspx" />
+    <Content Include="ChequeReceivedReport.aspx" />
+    <Content Include="CloseReturnOrder.aspx" />
+    <Content Include="COD.aspx" />
+    <Content Include="CollectionReportMonthWise.aspx" />
+    <Content Include="CollectionReportRegionWise.aspx" />
+    <Content Include="Complaint Form.aspx" />
+    <Content Include="ComplaintReport.aspx" />
+    <Content Include="Content\css\select2.css" />
+    <Content Include="Content\css\select2.min.css" />
+    <Content Include="css\jquery\dataTables.bootstrap.min.css" />
+    <Content Include="Customer.aspx" />
+    <Content Include="CustomerAgingConsolidated.aspx" />
+    <Content Include="CustomerAgingReport.aspx" />
+    <Content Include="CustomerBalanceList.aspx" />
+    <Content Include="CustomerTest.aspx" />
+    <Content Include="CustomerTest2.aspx" />
+    <Content Include="CustomerTurnOverCustGroup.aspx" />
+    <Content Include="CustomerTurnOverInvoiceDivision.aspx" />
+    <Content Include="CustomerWiseSalesAmount.aspx" />
+    <Content Include="CustomerWiseSalesQty.aspx" />
+    <Content Include="CustomerWiseYearlySales.aspx" />
+    <Content Include="DetailDueDayList.aspx" />
+    <Content Include="DivisionWiseBalanceReport%28PDC%29.aspx" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="Images\cloader.gif" />
+    <Content Include="Images\cloader1.gif" />
+    <Content Include="Images\cloader2.gif" />
+    <Content Include="Images\cloader3.gif" />
+    <Content Include="Images\cloader4.gif" />
+    <Content Include="Images\GB-Logo.png" />
+    <Content Include="Images\gb.ico" />
+    <Content Include="Images\gb.png" />
+    <Content Include="IndexTable.aspx" />
+    <Content Include="InternalAccountStatement.aspx" />
+    <Content Include="ItemWiseYearlySaleQty.aspx" />
+    <Content Include="ItemWiseYearlySalesAmount.aspx" />
+    <Content Include="JSon.aspx" />
+    <Content Include="js\jquery\2.1.3\jquery.min.js" />
+    <Content Include="js\jquery\dataTables.bootstrap.min.js" />
+    <Content Include="js\jquery\dataTables.min.js" />
+    <Content Include="js\jquery\1.8.3\jquery.min.js" />
+    <Content Include="MonthWiseItemSaleAmount.aspx" />
+    <Content Include="MonthWiseItemSales.aspx" />
+    <Content Include="js\Script.js" />
+    <Content Include="Logout.aspx" />
+    <Content Include="NetSalesReport.aspx" />
+    <Content Include="OnHandInventory.aspx" />
+    <Content Include="OpenSalesOrder.aspx" />
+    <Content Include="OpenCustomerInvoice.aspx" />
+    <Content Include="OpenCustomerInvoicePastDueToday.aspx" />
+    <Content Include="OpenCustomerPastDueInvoice.aspx" />
+    <Content Include="OpenReturnOrder.aspx" />
+    <Content Include="OpenSalesOrderForCustomerOnHold.aspx" />
+    <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <Content Include="SalesReportInvoiceWise.aspx" />
+    <Content Include="SalesReportItemWise.aspx" />
+    <Content Include="Scripts\i18n\af.js" />
+    <Content Include="Scripts\i18n\ar.js" />
+    <Content Include="Scripts\i18n\az.js" />
+    <Content Include="Scripts\i18n\bg.js" />
+    <Content Include="Scripts\i18n\bs.js" />
+    <Content Include="Scripts\i18n\ca.js" />
+    <Content Include="Scripts\i18n\cs.js" />
+    <Content Include="Scripts\i18n\da.js" />
+    <Content Include="Scripts\i18n\de.js" />
+    <Content Include="Scripts\i18n\dsb.js" />
+    <Content Include="Scripts\i18n\el.js" />
+    <Content Include="Scripts\i18n\en.js" />
+    <Content Include="Scripts\i18n\es.js" />
+    <Content Include="Scripts\i18n\et.js" />
+    <Content Include="Scripts\i18n\eu.js" />
+    <Content Include="Scripts\i18n\fa.js" />
+    <Content Include="Scripts\i18n\fi.js" />
+    <Content Include="Scripts\i18n\fr.js" />
+    <Content Include="Scripts\i18n\gl.js" />
+    <Content Include="Scripts\i18n\he.js" />
+    <Content Include="Scripts\i18n\hi.js" />
+    <Content Include="Scripts\i18n\hr.js" />
+    <Content Include="Scripts\i18n\hsb.js" />
+    <Content Include="Scripts\i18n\hu.js" />
+    <Content Include="Scripts\i18n\hy.js" />
+    <Content Include="Scripts\i18n\id.js" />
+    <Content Include="Scripts\i18n\is.js" />
+    <Content Include="Scripts\i18n\it.js" />
+    <Content Include="Scripts\i18n\ja.js" />
+    <Content Include="Scripts\i18n\km.js" />
+    <Content Include="Scripts\i18n\ko.js" />
+    <Content Include="Scripts\i18n\lt.js" />
+    <Content Include="Scripts\i18n\lv.js" />
+    <Content Include="Scripts\i18n\mk.js" />
+    <Content Include="Scripts\i18n\ms.js" />
+    <Content Include="Scripts\i18n\nb.js" />
+    <Content Include="Scripts\i18n\nl.js" />
+    <Content Include="Scripts\i18n\pl.js" />
+    <Content Include="Scripts\i18n\ps.js" />
+    <Content Include="Scripts\i18n\pt-BR.js" />
+    <Content Include="Scripts\i18n\pt.js" />
+    <Content Include="Scripts\i18n\ro.js" />
+    <Content Include="Scripts\i18n\ru.js" />
+    <Content Include="Scripts\i18n\sk.js" />
+    <Content Include="Scripts\i18n\sl.js" />
+    <Content Include="Scripts\i18n\sr-Cyrl.js" />
+    <Content Include="Scripts\i18n\sr.js" />
+    <Content Include="Scripts\i18n\sv.js" />
+    <Content Include="Scripts\i18n\th.js" />
+    <Content Include="Scripts\i18n\tr.js" />
+    <Content Include="Scripts\i18n\uk.js" />
+    <Content Include="Scripts\i18n\vi.js" />
+    <Content Include="Scripts\i18n\zh-CN.js" />
+    <Content Include="Scripts\i18n\zh-TW.js" />
+    <Content Include="Scripts\select2.js" />
+    <Content Include="Scripts\select2.min.js" />
+    <Content Include="Select2\select-tests.js" />
+    <Content Include="Select2\select2.css" />
+    <Content Include="Select2\select2.js" />
+    <Content Include="Select2\select2.min.css" />
+    <Content Include="Select2\select2.min.js" />
+    <Content Include="ShippedButNotInvoicedSalesOrder.aspx" />
+    <Content Include="SignIn.aspx" />
+    <Content Include="vendor\bootstrap\css\Bootstrap-multiselect.css" />
+    <Content Include="vendor\bootstrap\css\Bootstrap-multiselect.js" />
+    <Content Include="vendor\bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.js" />
+    <Content Include="WebAPI.html" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
+    <Content Include="WebForm4.aspx" />
+    <Content Include="WebForm5.aspx" />
+    <Content Include="Select2\select2.jquery.json" />
+    <None Include="Properties\PublishProfiles\SalesWebPortal.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SalesReport\WebService1.wsdl" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\util.css" />
+    <Content Include="data\flot-data.js" />
+    <Content Include="data\morris-data.js" />
+    <Content Include="dist\css\sb-admin-2.css" />
+    <Content Include="dist\css\sb-admin-2.min.css" />
+    <Content Include="dist\js\sb-admin-2.js" />
+    <Content Include="dist\js\sb-admin-2.min.js" />
+    <Content Include="fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="fonts\Linearicons-Free-v1.0.0\icon-font.min.css" />
+    <Content Include="fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.svg" />
+    <Content Include="fonts\montserrat\OFL.txt" />
+    <Content Include="fonts\ubuntu\UFL.txt" />
+    <Content Include="Global.asax" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\main.js" />
+    <Content Include="js\sb-admin-2.js" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.eot" />
+    <Content Include="fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.ttf" />
+    <Content Include="fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff" />
+    <Content Include="fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff2" />
+    <Content Include="fonts\montserrat\Montserrat-Black.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-BlackItalic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-Bold.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-BoldItalic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-ExtraBold.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-ExtraLight.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-Italic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-Light.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-LightItalic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-Medium.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-MediumItalic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-Regular.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-SemiBold.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-Thin.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-ThinItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="fonts\ubuntu\Ubuntu-Bold.ttf" />
+    <Content Include="fonts\ubuntu\Ubuntu-BoldItalic.ttf" />
+    <Content Include="fonts\ubuntu\Ubuntu-Italic.ttf" />
+    <Content Include="fonts\ubuntu\Ubuntu-Light.ttf" />
+    <Content Include="fonts\ubuntu\Ubuntu-LightItalic.ttf" />
+    <Content Include="fonts\ubuntu\Ubuntu-Medium.ttf" />
+    <Content Include="fonts\ubuntu\Ubuntu-MediumItalic.ttf" />
+    <Content Include="fonts\ubuntu\Ubuntu-Regular.ttf" />
+    <Content Include="less\mixins.less" />
+    <Content Include="less\sb-admin-2.less" />
+    <Content Include="less\variables.less" />
+    <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
+    <Content Include="Scripts\index.d.ts" />
+    <Content Include="Scripts\jquery-3.0.0.js" />
+    <Content Include="Scripts\jquery-3.0.0.min.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <None Include="Service References\SalesReport\WebService1.disco" />
+    <None Include="Service References\SalesReport\configuration91.svcinfo" />
+    <None Include="Service References\SalesReport\configuration.svcinfo" />
+    <None Include="Service References\SalesReport\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Sign In.aspx" />
+    <Content Include="vendor\animate\animate.css" />
+    <Content Include="vendor\animsition\css\animsition.css" />
+    <Content Include="vendor\animsition\css\animsition.min.css" />
+    <Content Include="vendor\animsition\js\animsition.js" />
+    <Content Include="vendor\animsition\js\animsition.min.js" />
+    <Content Include="vendor\bootstrap-social\bootstrap-social.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\bootstrap\js\popper.js" />
+    <Content Include="vendor\bootstrap\js\popper.min.js" />
+    <Content Include="vendor\bootstrap\js\tooltip.js" />
+    <Content Include="vendor\countdowntime\countdowntime.js" />
+    <Content Include="vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="vendor\datatables-plugins\dataTables.bootstrap.css" />
+    <Content Include="vendor\datatables-plugins\dataTables.bootstrap.js" />
+    <Content Include="vendor\datatables-plugins\dataTables.bootstrap.min.js" />
+    <Content Include="vendor\datatables-plugins\index.html" />
+    <Content Include="vendor\datatables-responsive\dataTables.responsive.css" />
+    <Content Include="vendor\datatables-responsive\dataTables.responsive.js" />
+    <Content Include="vendor\datatables\css\dataTables.bootstrap.css" />
+    <Content Include="vendor\datatables\css\dataTables.bootstrap.min.css" />
+    <Content Include="vendor\datatables\css\dataTables.bootstrap4.css" />
+    <Content Include="vendor\datatables\css\dataTables.bootstrap4.min.css" />
+    <Content Include="vendor\datatables\css\dataTables.foundation.css" />
+    <Content Include="vendor\datatables\css\dataTables.foundation.min.css" />
+    <Content Include="vendor\datatables\css\dataTables.jqueryui.css" />
+    <Content Include="vendor\datatables\css\dataTables.jqueryui.min.css" />
+    <Content Include="vendor\datatables\css\dataTables.material.css" />
+    <Content Include="vendor\datatables\css\dataTables.material.min.css" />
+    <Content Include="vendor\datatables\css\dataTables.semanticui.css" />
+    <Content Include="vendor\datatables\css\dataTables.semanticui.min.css" />
+    <Content Include="vendor\datatables\css\dataTables.uikit.css" />
+    <Content Include="vendor\datatables\css\dataTables.uikit.min.css" />
+    <Content Include="vendor\datatables\css\jquery.dataTables.css" />
+    <Content Include="vendor\datatables\css\jquery.dataTables.min.css" />
+    <Content Include="vendor\datatables\css\jquery.dataTables_themeroller.css" />
+    <Content Include="vendor\datatables\images\favicon.ico" />
+    <Content Include="vendor\datatables\images\sort_asc.png" />
+    <Content Include="vendor\datatables\images\sort_asc_disabled.png" />
+    <Content Include="vendor\datatables\images\sort_both.png" />
+    <Content Include="vendor\datatables\images\sort_desc.png" />
+    <Content Include="vendor\datatables\images\sort_desc_disabled.png" />
+    <Content Include="vendor\datatables\js\dataTables.bootstrap.js" />
+    <Content Include="vendor\datatables\js\dataTables.bootstrap.min.js" />
+    <Content Include="vendor\datatables\js\dataTables.bootstrap4.js" />
+    <Content Include="vendor\datatables\js\dataTables.bootstrap4.min.js" />
+    <Content Include="vendor\datatables\js\dataTables.foundation.js" />
+    <Content Include="vendor\datatables\js\dataTables.foundation.min.js" />
+    <Content Include="vendor\datatables\js\dataTables.jqueryui.js" />
+    <Content Include="vendor\datatables\js\dataTables.jqueryui.min.js" />
+    <Content Include="vendor\datatables\js\dataTables.material.js" />
+    <Content Include="vendor\datatables\js\dataTables.material.min.js" />
+    <Content Include="vendor\datatables\js\dataTables.semanticui.js" />
+    <Content Include="vendor\datatables\js\dataTables.semanticui.min.js" />
+    <Content Include="vendor\datatables\js\dataTables.uikit.js" />
+    <Content Include="vendor\datatables\js\dataTables.uikit.min.js" />
+    <Content Include="vendor\datatables\js\jquery.dataTables.js" />
+    <Content Include="vendor\datatables\js\jquery.dataTables.min.js" />
+    <Content Include="vendor\datatables\js\jquery.js" />
+    <Content Include="vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="vendor\daterangepicker\moment.js" />
+    <Content Include="vendor\daterangepicker\moment.min.js" />
+    <Content Include="vendor\flot-tooltip\jquery.flot.tooltip.js" />
+    <Content Include="vendor\flot-tooltip\jquery.flot.tooltip.min.js" />
+    <Content Include="vendor\flot-tooltip\jquery.flot.tooltip.source.js" />
+    <Content Include="vendor\flot\excanvas.js" />
+    <Content Include="vendor\flot\excanvas.min.js" />
+    <Content Include="vendor\flot\jquery.colorhelpers.js" />
+    <Content Include="vendor\flot\jquery.flot.canvas.js" />
+    <Content Include="vendor\flot\jquery.flot.categories.js" />
+    <Content Include="vendor\flot\jquery.flot.crosshair.js" />
+    <Content Include="vendor\flot\jquery.flot.errorbars.js" />
+    <Content Include="vendor\flot\jquery.flot.fillbetween.js" />
+    <Content Include="vendor\flot\jquery.flot.image.js" />
+    <Content Include="vendor\flot\jquery.flot.js" />
+    <Content Include="vendor\flot\jquery.flot.navigate.js" />
+    <Content Include="vendor\flot\jquery.flot.pie.js" />
+    <Content Include="vendor\flot\jquery.flot.resize.js" />
+    <Content Include="vendor\flot\jquery.flot.selection.js" />
+    <Content Include="vendor\flot\jquery.flot.stack.js" />
+    <Content Include="vendor\flot\jquery.flot.symbol.js" />
+    <Content Include="vendor\flot\jquery.flot.threshold.js" />
+    <Content Include="vendor\flot\jquery.flot.time.js" />
+    <Content Include="vendor\flot\jquery.js" />
+    <Content Include="vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="vendor\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="vendor\jquery\jquery.js" />
+    <Content Include="vendor\jquery\jquery.min.js" />
+    <Content Include="vendor\metisMenu\metisMenu.css" />
+    <Content Include="vendor\metisMenu\metisMenu.js" />
+    <Content Include="vendor\metisMenu\metisMenu.min.css" />
+    <Content Include="vendor\metisMenu\metisMenu.min.js" />
+    <Content Include="vendor\morrisjs\morris.css" />
+    <Content Include="vendor\morrisjs\morris.js" />
+    <Content Include="vendor\morrisjs\morris.min.js" />
+    <Content Include="vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="vendor\raphael\raphael.js" />
+    <Content Include="vendor\raphael\raphael.min.js" />
+    <Content Include="vendor\select2\select2.css" />
+    <Content Include="vendor\select2\select2.js" />
+    <Content Include="vendor\select2\select2.min.css" />
+    <Content Include="vendor\select2\select2.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.0.0.min.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Site1.Master" />
+    <Content Include="vendor\bootstrap-social\bootstrap-social.less" />
+    <Content Include="vendor\bootstrap-social\bootstrap-social.scss" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="vendor\datatables-responsive\dataTables.responsive.scss" />
+    <Content Include="vendor\datatables\images\Sorting icons.psd" />
+    <Content Include="vendor\font-awesome\css\font-awesome.css.map" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="vendor\font-awesome\less\animated.less" />
+    <Content Include="vendor\font-awesome\less\bordered-pulled.less" />
+    <Content Include="vendor\font-awesome\less\core.less" />
+    <Content Include="vendor\font-awesome\less\extras.less" />
+    <Content Include="vendor\font-awesome\less\fixed-width.less" />
+    <Content Include="vendor\font-awesome\less\font-awesome.less" />
+    <Content Include="vendor\font-awesome\less\icons.less" />
+    <Content Include="vendor\font-awesome\less\larger.less" />
+    <Content Include="vendor\font-awesome\less\list.less" />
+    <Content Include="vendor\font-awesome\less\mixins.less" />
+    <Content Include="vendor\font-awesome\less\path.less" />
+    <Content Include="vendor\font-awesome\less\rotated-flipped.less" />
+    <Content Include="vendor\font-awesome\less\screen-reader.less" />
+    <Content Include="vendor\font-awesome\less\spinning.less" />
+    <Content Include="vendor\font-awesome\less\stacked.less" />
+    <Content Include="vendor\font-awesome\less\variables.less" />
+    <Content Include="vendor\font-awesome\scss\font-awesome.scss" />
+    <Content Include="vendor\font-awesome\scss\_animated.scss" />
+    <Content Include="vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="vendor\font-awesome\scss\_core.scss" />
+    <Content Include="vendor\font-awesome\scss\_extras.scss" />
+    <Content Include="vendor\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="vendor\font-awesome\scss\_icons.scss" />
+    <Content Include="vendor\font-awesome\scss\_larger.scss" />
+    <Content Include="vendor\font-awesome\scss\_list.scss" />
+    <Content Include="vendor\font-awesome\scss\_mixins.scss" />
+    <Content Include="vendor\font-awesome\scss\_path.scss" />
+    <Content Include="vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="vendor\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="vendor\font-awesome\scss\_spinning.scss" />
+    <Content Include="vendor\font-awesome\scss\_stacked.scss" />
+    <Content Include="vendor\font-awesome\scss\_variables.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllCustomer.aspx.cs">
+      <DependentUpon>AllCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllCustomer.aspx.designer.cs">
+      <DependentUpon>AllCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllCustomer.cs" />
+    <Compile Include="AllCustomerOnHold.aspx.cs">
+      <DependentUpon>AllCustomerOnHold.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllCustomerOnHold.aspx.designer.cs">
+      <DependentUpon>AllCustomerOnHold.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllReturnOrder.aspx.cs">
+      <DependentUpon>AllReturnOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllReturnOrder.aspx.designer.cs">
+      <DependentUpon>AllReturnOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllReturnOrder.cs" />
+    <Compile Include="ALLSALESORDER.aspx.cs">
+      <DependentUpon>ALLSALESORDER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ALLSALESORDER.aspx.designer.cs">
+      <DependentUpon>ALLSALESORDER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar.aspx.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar.aspx.designer.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CancelledReturnOrder.aspx.cs">
+      <DependentUpon>CancelledReturnOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CancelledReturnOrder.aspx.designer.cs">
+      <DependentUpon>CancelledReturnOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChequeReceivedReport.aspx.cs">
+      <DependentUpon>ChequeReceivedReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChequeReceivedReport.aspx.designer.cs">
+      <DependentUpon>ChequeReceivedReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChequeReceivedReportList.cs" />
+    <Compile Include="CloseReturnOrder.aspx.cs">
+      <DependentUpon>CloseReturnOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseReturnOrder.aspx.designer.cs">
+      <DependentUpon>CloseReturnOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COD.aspx.cs">
+      <DependentUpon>COD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COD.aspx.designer.cs">
+      <DependentUpon>COD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COD.cs" />
+    <Compile Include="CollectionReportMonthWise.aspx.cs">
+      <DependentUpon>CollectionReportMonthWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CollectionReportMonthWise.aspx.designer.cs">
+      <DependentUpon>CollectionReportMonthWise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CollectionReportMonthWiseList.cs" />
+    <Compile Include="CollectionReportRegionWise.aspx.cs">
+      <DependentUpon>CollectionReportRegionWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CollectionReportRegionWise.aspx.designer.cs">
+      <DependentUpon>CollectionReportRegionWise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Complaint Form.aspx.cs">
+      <DependentUpon>Complaint Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Complaint Form.aspx.designer.cs">
+      <DependentUpon>Complaint Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComplaintReport.aspx.cs">
+      <DependentUpon>ComplaintReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComplaintReport.aspx.designer.cs">
+      <DependentUpon>ComplaintReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustInvoicePastDueToday.cs" />
+    <Compile Include="Customer.aspx.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer.aspx.designer.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAging.cs" />
+    <Compile Include="CustomerAgingConsolidated.aspx.cs">
+      <DependentUpon>CustomerAgingConsolidated.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerAgingConsolidated.aspx.designer.cs">
+      <DependentUpon>CustomerAgingConsolidated.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAgingConsolidatedList.cs" />
+    <Compile Include="CustomerAgingReport.aspx.cs">
+      <DependentUpon>CustomerAgingReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerAgingReport.aspx.designer.cs">
+      <DependentUpon>CustomerAgingReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerBalanceList.aspx.cs">
+      <DependentUpon>CustomerBalanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerBalanceList.aspx.designer.cs">
+      <DependentUpon>CustomerBalanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerTest.aspx.cs">
+      <DependentUpon>CustomerTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerTest.aspx.designer.cs">
+      <DependentUpon>CustomerTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerTest2.aspx.cs">
+      <DependentUpon>CustomerTest2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerTest2.aspx.designer.cs">
+      <DependentUpon>CustomerTest2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerTurnOverByCustGroup.cs" />
+    <Compile Include="CustomerTurnOverCustGroup.aspx.cs">
+      <DependentUpon>CustomerTurnOverCustGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerTurnOverCustGroup.aspx.designer.cs">
+      <DependentUpon>CustomerTurnOverCustGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerTurnOverInvoiceDivision.aspx.cs">
+      <DependentUpon>CustomerTurnOverInvoiceDivision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerTurnOverInvoiceDivision.aspx.designer.cs">
+      <DependentUpon>CustomerTurnOverInvoiceDivision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerTurnOverInvoiceDivisionList.cs" />
+    <Compile Include="CustomerWiseSalesAmount.aspx.cs">
+      <DependentUpon>CustomerWiseSalesAmount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerWiseSalesAmount.aspx.designer.cs">
+      <DependentUpon>CustomerWiseSalesAmount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerWiseSalesAmount.cs" />
+    <Compile Include="CustomerWiseSalesQty.aspx.cs">
+      <DependentUpon>CustomerWiseSalesQty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerWiseSalesQty.aspx.designer.cs">
+      <DependentUpon>CustomerWiseSalesQty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerWiseSalesQty.cs" />
+    <Compile Include="CustomerWiseYearlyAmount.cs" />
+    <Compile Include="CustomerWiseYearlySales.aspx.cs">
+      <DependentUpon>CustomerWiseYearlySales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerWiseYearlySales.aspx.designer.cs">
+      <DependentUpon>CustomerWiseYearlySales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailDueDayList.aspx.cs">
+      <DependentUpon>DetailDueDayList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailDueDayList.aspx.designer.cs">
+      <DependentUpon>DetailDueDayList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailDueDayList.cs" />
+    <Compile Include="DivisionWiseBalanceList.cs" />
+    <Compile Include="DivisionWiseBalanceReport%28PDC%29.aspx.cs">
+      <DependentUpon>DivisionWiseBalanceReport%28PDC%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DivisionWiseBalanceReport%28PDC%29.aspx.designer.cs">
+      <DependentUpon>DivisionWiseBalanceReport%28PDC%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDataAccessLayer.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IndexTable.aspx.cs">
+      <DependentUpon>IndexTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndexTable.aspx.designer.cs">
+      <DependentUpon>IndexTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InternalAccountStatement.aspx.cs">
+      <DependentUpon>InternalAccountStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InternalAccountStatement.aspx.designer.cs">
+      <DependentUpon>InternalAccountStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InternalAccountStatement.cs" />
+    <Compile Include="ItemWiseYearlySaleQty.aspx.cs">
+      <DependentUpon>ItemWiseYearlySaleQty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ItemWiseYearlySaleQty.aspx.designer.cs">
+      <DependentUpon>ItemWiseYearlySaleQty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ItemWiseYearlySalesAmount.aspx.cs">
+      <DependentUpon>ItemWiseYearlySalesAmount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ItemWiseYearlySalesAmount.aspx.designer.cs">
+      <DependentUpon>ItemWiseYearlySalesAmount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ItemWiseYearlySalesAmount.cs" />
+    <Compile Include="ItemWiseYearlySalesQty.cs" />
+    <Compile Include="JSon.aspx.cs">
+      <DependentUpon>JSon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSon.aspx.designer.cs">
+      <DependentUpon>JSon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListCustomerTurnOverAndBalanceStatement.cs" />
+    <Compile Include="MonthWiseItemSaleAmount.aspx.cs">
+      <DependentUpon>MonthWiseItemSaleAmount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonthWiseItemSaleAmount.aspx.designer.cs">
+      <DependentUpon>MonthWiseItemSaleAmount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonthWiseItemSales.aspx.cs">
+      <DependentUpon>MonthWiseItemSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonthWiseItemSales.aspx.designer.cs">
+      <DependentUpon>MonthWiseItemSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ItemWiseMonthlySales.cs" />
+    <Compile Include="ListCollectionRegionWise.cs" />
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonthWiseItemSalesAmount.cs" />
+    <Compile Include="NetSalesReport.aspx.cs">
+      <DependentUpon>NetSalesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NetSalesReport.aspx.designer.cs">
+      <DependentUpon>NetSalesReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NetSalesReport.cs" />
+    <Compile Include="OnHandInventory.aspx.cs">
+      <DependentUpon>OnHandInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnHandInventory.aspx.designer.cs">
+      <DependentUpon>OnHandInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnHandInventory.cs" />
+    <Compile Include="OpenSalesOrder.aspx.cs">
+      <DependentUpon>OpenSalesOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OpenSalesOrder.aspx.designer.cs">
+      <DependentUpon>OpenSalesOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OpenCustomerInvoice.aspx.cs">
+      <DependentUpon>OpenCustomerInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OpenCustomerInvoice.aspx.designer.cs">
+      <DependentUpon>OpenCustomerInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OpenCustomerInvoice.cs" />
+    <Compile Include="OpenCustomerInvoicePastDueToday.aspx.cs">
+      <DependentUpon>OpenCustomerInvoicePastDueToday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OpenCustomerInvoicePastDueToday.aspx.designer.cs">
+      <DependentUpon>OpenCustomerInvoicePastDueToday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OpenCustomerPastDueInvoice.aspx.cs">
+      <DependentUpon>OpenCustomerPastDueInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OpenCustomerPastDueInvoice.aspx.designer.cs">
+      <DependentUpon>OpenCustomerPastDueInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OpencustPastDueInvoice.cs" />
+    <Compile Include="OpenReturnOrder.aspx.cs">
+      <DependentUpon>OpenReturnOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OpenReturnOrder.aspx.designer.cs">
+      <DependentUpon>OpenReturnOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OpenSalesOrderForCustomerOnHold.aspx.cs">
+      <DependentUpon>OpenSalesOrderForCustomerOnHold.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OpenSalesOrderForCustomerOnHold.aspx.designer.cs">
+      <DependentUpon>OpenSalesOrderForCustomerOnHold.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnOrder.cs" />
+    <Compile Include="SalesOrderClass.cs" />
+    <Compile Include="ListSalesReportInvoiceWise.cs" />
+    <Compile Include="SalesReportInvoiceWise.aspx.cs">
+      <DependentUpon>SalesReportInvoiceWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesReportInvoiceWise.aspx.designer.cs">
+      <DependentUpon>SalesReportInvoiceWise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesReportItemWise.aspx.cs">
+      <DependentUpon>SalesReportItemWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesReportItemWise.aspx.designer.cs">
+      <DependentUpon>SalesReportItemWise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SalesReport\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ShippedButNotInvoicedSalesOrder.aspx.cs">
+      <DependentUpon>ShippedButNotInvoicedSalesOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShippedButNotInvoicedSalesOrder.aspx.designer.cs">
+      <DependentUpon>ShippedButNotInvoicedSalesOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShippedNotinvoicedSalesOrder.cs" />
+    <Compile Include="Sign In.aspx.cs">
+      <DependentUpon>Sign In.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sign In.aspx.designer.cs">
+      <DependentUpon>Sign In.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm5.aspx.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm5.aspx.designer.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="assets\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SalesReport\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>37922</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:37922/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
